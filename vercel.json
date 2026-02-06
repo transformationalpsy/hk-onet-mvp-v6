@@ -1,1 +1,1 @@
-{"buildCommand": "npx prisma migrate deploy --schema=./prisma/schema.prisma && node scripts/seed.mjs && node scripts/link_by_names.mjs && next build"}
+{\n  "buildCommand": "npx prisma generate --schema prisma/schema.prisma && npx prisma migrate deploy --schema prisma/schema.prisma && node scripts/seed.mjs && node scripts/link_by_names.mjs && next build"\n}
