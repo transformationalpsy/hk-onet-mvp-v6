@@ -1,0 +1,3 @@
+{
+  "buildCommand": "npx prisma migrate deploy && node scripts/seed.mjs && node scripts/link_by_names.mjs && next build"
+}
